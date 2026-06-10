@@ -1,3 +1,19 @@
-# md-strip
+# TypeScript greeter
 
-A tiny CLI that strips markdown formatting and outputs plain text. Built as an example TypeScript project with a CI workflow for Codebahn's managed runners. Push to your Codebahn repo and the workflow runs type checking and tests automatically on `codebahn-small`.
+A tiny TypeScript project with Vitest tests. Demonstrates type checking and testing on [Forgejo Actions](https://forgejo.org/docs/latest/user/actions/).
+
+## CI workflow
+
+Runs on every push ([`.forgejo/workflows/ci.yml`](.forgejo/workflows/ci.yml)):
+
+1. Installs dependencies
+2. Type-checks with `tsc --noEmit`
+3. Runs tests with Vitest
+
+## Run locally
+
+```
+npm install
+npm test
+npx tsc --noEmit
+```

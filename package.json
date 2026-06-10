@@ -1,11 +1,8 @@
 {
-  "name": "md-strip",
+  "name": "greeter",
   "version": "1.0.0",
-  "description": "Strip markdown formatting to plain text",
+  "description": "A tiny greeter",
   "type": "module",
-  "bin": {
-    "md-strip": "dist/index.js"
-  },
   "scripts": {
     "build": "tsc",
     "test": "vitest run"
