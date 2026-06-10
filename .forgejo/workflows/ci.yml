@@ -1,9 +1,9 @@
 name: CI
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
-  check:
+  test:
     runs-on: codebahn-small
     steps:
       - uses: actions/checkout@v4
